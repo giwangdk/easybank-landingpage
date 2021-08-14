@@ -15,12 +15,29 @@
             width: 26px;
             height: 2px;
             background-color: $darkBlue;
+            transition: all 200ms ease-in-out;
+            transform-origin: 5px 1px;
          
         &:not(:last-child){
             margin-bottom: 3px;
         }
         }
+        
+        &.open{
+            >span:first-child{
+                transform: rotate(45deg);
+            }
+            >span:nth-child(2){
+                opacity: 0;
+            }
+            >span:last-child{
+                transform: rotate(-45deg);
+            }
+        }
     }
+
+    
+
     &__links{
         a{
         position: relative;
@@ -59,4 +76,14 @@
         opacity: 0.75;
     }
     }
+}
+
+.overlay{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: $darkBlue;
+    background-image: linear-gradient($darkBlue, transparent);
 }
