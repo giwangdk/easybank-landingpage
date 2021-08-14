@@ -1,6 +1,7 @@
 .header{
         //hamburger open
     &.open{
+
         .header__menu{
         >span:first-child{
             transform: rotate(45deg);
@@ -21,6 +22,8 @@
         right: 0;
         background-color: $darkBlue;
         background: linear-gradient($darkBlue, transparent);
+    
+    
     }
     nav{
         padding: 17px 24px;
