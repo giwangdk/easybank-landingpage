@@ -340,6 +340,7 @@ button:hover, .button:hover {
             order: 2;
     min-height: 41rem;
     background-position: left center;
+    background: none;
   }
 }
 
@@ -349,7 +350,7 @@ button:hover, .button:hover {
     background-image: url("/images/bg-intro-desktop.svg");
     position: absolute;
     height: 100%;
-    background-size: 122%;
+    background-size: 120%;
     background-repeat: no-repeat;
     background-position: center bottom;
     width: 150%;
@@ -421,6 +422,26 @@ button:hover, .button:hover {
 @media (min-width: 64em) {
   .hero__text p {
     font: 1.125rem;
+  }
+}
+
+@media (min-width: 64em) {
+  .feature__grid {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+.feature__item {
+  padding: 0.9375rem;
+}
+
+@media (min-width: 64em) {
+  .feature__item {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
   }
 }
 /*# sourceMappingURL=style.css.map */
