@@ -69,23 +69,7 @@
             text-align: left;
             }
         text-align: center;
-        h1{
-            font-weight: 300;
-            color:$darkBlue;
-            line-height: 1.15;
-            font-size: 2.31rem;
-            margin-bottom:1.5rem ;
-            @include breakpoint-up(large){
-                font: $font-xl;
-            }
-        }
-        p{
-            line-height: 1.5;
-            margin-bottom: 2.25rem ;
-            font-weight: 300 I !important;
-            @include breakpoint-up(large){
-                font: $font-med;
-            }
-        }
+        
+        
     }
 }
