@@ -101,10 +101,48 @@ body {
 
 h1, h2, h3 {
   margin-top: 0px;
+  font-weight: 300;
+  color: #2d314d;
+  line-height: 1.15;
+}
+
+h1 {
+  font-size: 2.31rem;
+  margin-bottom: 1.5rem;
+}
+
+@media (min-width: 64em) {
+  h1 {
+    font: 3.25rem;
+  }
+}
+
+h2 {
+  font-size: 1.875rem;
+  margin-bottom: 1.565rem;
+}
+
+@media (min-width: 64em) {
+  h2 {
+    font-size: 2.25rem;
+    margin-bottom: 2.25rem;
+  }
 }
 
 a, a:visited, a:hover {
   text-decoration: none;
+}
+
+p {
+  line-height: 1.5;
+  margin-bottom: 2.25rem;
+  font-weight: 300 I !important;
+}
+
+@media (min-width: 64em) {
+  p {
+    font: 1.125rem;
+  }
 }
 
 .container {
@@ -399,42 +437,26 @@ button:hover, .button:hover {
   }
 }
 
-.hero__text h1 {
-  font-weight: 300;
-  color: #2d314d;
-  line-height: 1.15;
-  font-size: 2.31rem;
-  margin-bottom: 1.5rem;
-}
-
-@media (min-width: 64em) {
-  .hero__text h1 {
-    font: 3.25rem;
-  }
-}
-
-.hero__text p {
-  line-height: 1.5;
-  margin-bottom: 2.25rem;
-  font-weight: 300 I !important;
-}
-
-@media (min-width: 64em) {
-  .hero__text p {
-    font: 1.125rem;
-  }
-}
-
-@media (min-width: 64em) {
+@media (min-width: 40em) {
   .feature__grid {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
 }
 
 .feature__item {
   padding: 0.9375rem;
+}
+
+@media (min-width: 40em) {
+  .feature__item {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 0 50%;
+            flex: 1 0 50%;
+  }
 }
 
 @media (min-width: 64em) {
