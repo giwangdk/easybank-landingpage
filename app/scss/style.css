@@ -91,6 +91,7 @@ body {
   font-weight: 300;
   color: #9698a6;
   font-family: 'Public sans', sans-serif;
+  min-height: 200vh;
 }
 
 @media (min-width: 64em) {
@@ -100,9 +101,6 @@ body {
 }
 
 h1, h2, h3 {
-  margin-top: 0px;
-  font-weight: 300;
-  color: #2d314d;
   line-height: 1.15;
 }
 
@@ -151,10 +149,17 @@ p {
 }
 
 .container--pall {
-  padding-top: 2.25rem;
+  padding-top: 4.375rem;
   padding-bottom: 2.25rem;
-  padding-right: 1.5rem;
+  padding-right: 4.375rem;
   padding-left: 1.5rem;
+}
+
+@media (min-width: 64em) {
+  .container--pall {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+  }
 }
 
 .container--py {
@@ -437,6 +442,20 @@ button:hover, .button:hover {
   }
 }
 
+.feature {
+  background-color: #f3f4f6;
+}
+
+.feature__intro {
+  margin-bottom: 3.75rem;
+}
+
+@media (min-width: 64em) {
+  .feature__intro {
+    width: 50%;
+  }
+}
+
 @media (min-width: 40em) {
   .feature__grid {
     display: -webkit-box;
@@ -465,5 +484,35 @@ button:hover, .button:hover {
         -ms-flex: 1;
             flex: 1;
   }
+}
+
+.feature__icon {
+  margin-bottom: 1.875rem;
+}
+
+@media (min-width: 64em) {
+  .feature__icon {
+    margin-bottom: 2.75rem;
+  }
+}
+
+.feature__title {
+  margin-top: 0px;
+  font-weight: 300;
+  color: #2d314d;
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+}
+
+@media (min-width: 64em) {
+  .feature__title {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+  }
+}
+
+.feature__description {
+  font-size: 0.875rem;
+  line-height: 1.5;
 }
 /*# sourceMappingURL=style.css.map */
